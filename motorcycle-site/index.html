@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[SITE NAME] – Motorcycle reviews for Nepal</title>
+<meta name="description" content="Honest motorcycle reviews for Nepali roads, with prices in NPR.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">[SITE NAME]</a>
+  <nav><a href="#reviews">Reviews</a><a href="#rating">How I rate</a><a href="#about">About</a></nav>
+</header>
+<section class="hero">
+  <h1>Honest motorcycle reviews for Nepali roads</h1>
+  <p>Real-world tests on city traffic, highways and hills, with prices in NPR. Written by [YOUR NAME].</p>
+  <form class="searchbar" id="search-form" role="search">
+    <label for="q" style="position:absolute;left:-9999px">Search motorcycles</label>
+    <input id="q" type="search" placeholder="Search a bike or brand..." autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+  <div class="tabs">
+    <button class="tab" data-cat="All" aria-pressed="true">All</button>
+    <button class="tab" data-cat="Commuter" aria-pressed="false">Commuter</button>
+    <button class="tab" data-cat="Sport" aria-pressed="false">Sport</button>
+    <button class="tab" data-cat="Cruiser" aria-pressed="false">Cruiser</button>
+    <button class="tab" data-cat="Scooter" aria-pressed="false">Scooter</button>
+    <button class="tab" data-cat="Electric" aria-pressed="false">Electric</button>
+  </div>
+</section>
+<main id="reviews">
+  <div class="row"><h2>Latest reviews</h2><span class="count" id="count"></span></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>No reviews match yet. Try another name, or check back soon.</div>
+</main>
+<section class="band" id="rating"><div class="inner">
+  <h2>How I rate</h2>
+  <div class="criteria">
+    <div><h3>Ride and comfort</h3><p>[How it feels in traffic, on highways and on rough roads.]</p></div>
+    <div><h3>Performance</h3><p>[Power, braking and handling, including hill climbs.]</p></div>
+    <div><h3>Mileage and cost</h3><p>[Real fuel economy and running costs in Nepal.]</p></div>
+    <div><h3>Value</h3><p>[Price against what you get, plus service availability.]</p></div>
+  </div>
+</div></section>
+<section class="about" id="about">
+  <h2>About</h2>
+  <p>[A few lines about you, your riding experience, and how you test bikes. Say whether bikes are bought, borrowed or lent by dealers, so readers can trust the reviews.]</p>
+</section>
+<footer class="site-footer"><span>© [SITE NAME]. Not affiliated with any manufacturer.</span><span>Contact: [EMAIL / INSTAGRAM]</span></footer>
+<script src="reviews.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
